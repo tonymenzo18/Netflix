@@ -1,0 +1,218 @@
+header {
+    background: linear-gradient(rgba(5, 5, 5, 0.747), rgba(0, 0, 0, 0.7)),url('images/backgroundmovies.jpg');
+    background-size: cover;
+    box-shadow: inset 0  0em 5em 1em #000;
+}
+    header .logo {
+        display: block;
+        align-items: center; 
+        margin: 0;
+    }   
+    header #language {
+        display: flex;
+        padding: 0;
+        margin-left: 975px;
+        background-color: rgb(37, 32, 32);
+        color: white;
+        border: 1px solid lightgray;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-weight: bold;
+    }
+    header nav {
+        display: flex;
+        align-items: center;
+        margin: 0px 100px 0 100px;
+        padding-top: 20px;
+    }
+    header section {
+        display: flex;
+        align-items: center;
+    }
+    .signup {
+        margin-left: 10px;
+    }
+    .signup button {
+        background-color: rgb(255, 51, 0);
+        color: white;
+        padding: 7px 15px;
+        border: 1px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .signup button:hover {
+        background-color: rgb(153, 37, 8);
+    }
+body {
+    margin: 0;
+    background-color: black;
+}
+    body main p {
+        color: lightgray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        word-wrap: break-word;
+        font-size: 16px;
+        margin: 20px 43px 0 20px;
+    }
+    body main h3 {
+        margin: 10px 10px 5px 135px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 25px;
+    }
+    .centercontent {
+        line-height: 1;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 176px 100px 0 100px;
+        gap: 0;
+    }
+        .centercontent h1 {
+            margin: 0;
+            max-width: 480px;
+            text-align: center;
+            word-wrap: break-word;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            line-height: 1.2;
+            padding: 0;
+        }
+    .subcontent {
+        line-height: 1;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0px 0;
+    }
+        .subcontent h3 {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+header main {
+    justify-content: center;
+    align-items: center;
+}
+    .enteraccountupper, .enteraccountbelow{
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .enteraccountupper {
+        margin: 30px 0 10px 0;
+    }
+    .enteraccountbelow {
+        margin: 100px 0 10px 0;
+    }
+    .enteraccountupper p, .enteraccountbelow p {
+        color: rgb(221, 219, 219);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin: 0;
+    }
+    .getstartedupper button, .getstartedbelow button {
+        background-color: rgb(255, 51, 0);
+        color: white;
+        padding: 10px 20px;
+        border: 1px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .getstartedupper button:hover, .getstartedbelow button:hover {
+        background-color: rgb(153, 37, 8);
+    }
+    .getstartedupper .inputemail, .getstartedbelow .inputemail {
+        background-color: rgba(0, 0, 0, 0.288);
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        margin-right: 5px;
+        color: white;
+    }
+    .getstartedupper .inputemail {
+        padding: 12px 170px 10px 10px;
+    }
+    .getstartedbelow .inputemail {
+        padding: 12px 500px 10px 10px;
+    }
+    .getstartedupper, .getstartedbelow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getstartedupper {
+        padding-bottom: 230px;
+        padding-top: 10px;
+    }
+    .getstartedbelow {
+    margin-bottom: 50px;
+}
+.trendingmovies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .sampletrendingmovies {
+        margin: 0 5px 40px 10px;
+    }
+    .sampletrendingmovies ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+    .sampletrendingmovies li {
+        display: inline-block;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .sampletrendingmovies img {
+        height: 300px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .sampletrendingmovies img:hover {
+        transform: scale(1.1);
+    }
+        .nextbutton button {
+            background-color: rgb(49, 49, 49);
+            border: none;
+            color: lightgray;
+            border-radius: 7px;
+            padding: 40px 5px 40px 5px;
+            cursor: pointer;
+        }
+        .nextbutton button:hover {
+            background-color: rgb(27, 27, 27);
+            color: darkgray;
+        }
+.reasons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 138px;
+    gap: 15px;
+}
+    .enjoytv, .downloadoffline, .watcheverywhere, .kidsprofile {
+        background-color: rgb(29, 29, 78);
+        padding: 0 0;
+        border: none;
+        border-radius: 20px;
+        width: 295px;
+        height: 350px;
+    }
+        .reasons h3 {
+            margin: 20px 60px 5px 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 25px;
+        }
