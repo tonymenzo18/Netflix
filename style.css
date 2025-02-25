@@ -11,7 +11,6 @@ header {
     header #language {
         display: flex;
         padding: 0;
-        margin-left: 975px;
         background-color: rgb(37, 32, 32);
         color: white;
         border: 1px solid lightgray;
@@ -25,10 +24,12 @@ header {
         align-items: center;
         margin: 0px 100px 0 100px;
         padding-top: 20px;
+        justify-content: space-between;
     }
-    header section {
+    header form {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
     }
     .signup {
         margin-left: 10px;
@@ -49,6 +50,7 @@ header {
 body {
     margin: 0;
     background-color: black;
+    width: 100%;
 }
     body main p {
         color: lightgray;
@@ -58,7 +60,7 @@ body {
         margin: 20px 43px 0 20px;
     }
     body main h3 {
-        margin: 10px 10px 5px 135px;
+        margin: 10px 10px 5px 100px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
         font-size: 25px;
@@ -98,6 +100,9 @@ body {
 header main {
     justify-content: center;
     align-items: center;
+}
+body main {
+    padding: 20px 50px;
 }
     .enteraccountupper, .enteraccountbelow{
         line-height: 1;
@@ -139,10 +144,12 @@ header main {
         color: white;
     }
     .getstartedupper .inputemail {
-        padding: 12px 170px 10px 10px;
+        padding: 12px 10px 10px 10px;
+        width: 30%;
     }
     .getstartedbelow .inputemail {
-        padding: 12px 500px 10px 10px;
+        padding: 12px 12px 10px 10px;
+        width: 50%;
     }
     .getstartedupper, .getstartedbelow {
         display: flex;
@@ -155,11 +162,14 @@ header main {
     }
     .getstartedbelow {
     margin-bottom: 50px;
+
 }
 .trendingmovies {
+    line-height: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
     .sampletrendingmovies {
         margin: 0 5px 40px 10px;
@@ -168,17 +178,17 @@ header main {
         display: flex;
         padding: 0;
         margin: 0;
-        gap: 10px;
+        gap: 15px;
     }
     .sampletrendingmovies li {
         display: inline-block;
         font-size: 13px;
-        padding: 10px;
     }
     .sampletrendingmovies img {
-        height: 300px;
+        height: 100%;
         border-radius: 5px;
         cursor: pointer;
+        
     }
     .sampletrendingmovies img:hover {
         transform: scale(1.1);
@@ -199,20 +209,96 @@ header main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 10px 138px;
+    margin: 10px 0;
     gap: 15px;
+    width: 100%;
 }
     .enjoytv, .downloadoffline, .watcheverywhere, .kidsprofile {
         background-color: rgb(29, 29, 78);
         padding: 0 0;
         border: none;
         border-radius: 20px;
-        width: 295px;
+        width: 100%;
         height: 350px;
     }
         .reasons h3 {
-            margin: 20px 60px 5px 20px;
+            margin: 20px 30px 5px 20px;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
             font-size: 25px;
         }
+@media (max-width: 1028px) {
+    header {
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+    body {
+        width: 100%;
+    }
+    .trendingmovies img{
+        width: 100%;
+    }
+    body main h3 {
+        margin-left: 0;
+        font-size: larger;
+    }
+    .reasons {
+        display: block;
+    }
+    .enjoytv, .downloadoffline, .watcheverywhere, .kidsprofile {
+        width: 100%;
+        height: 200px;
+    }
+    .enjoytv p, .downloadoffline p, .watcheverywhere p, .kidsprofile p {
+        font-size: 20px;
+    }
+    .enjoytv h3, .downloadoffline h3, .watcheverywhere h3, .kidsprofile h3 {
+        padding-top: 15px;
+    }
+    main form .getstartedbelow {
+        width: 100%;
+    }
+    header main .centercontent h1 {
+        font-size: 30px;
+    }
+    .enteraccountupper p {
+        font-size: 20px;
+        width: 600px;
+        justify-content: center;
+        text-align: center;
+    }
+    .getstartedupper .inputemail {
+        height: 50px;
+        font-size: large;
+    }
+    .getstartedupper button {
+        height: 75px;
+        font-size: larger;
+    }
+    .logo img {
+        height: 30px;
+    }
+    nav form select {
+        height: 40px;
+        font-size: large;
+    }
+    nav form .signup button {
+        height: 40px;
+        font-size: large;
+    }
+    .getstartedbelow .inputemail {
+        height: 50px;
+        font-size: larger;
+    }
+    .getstartedbelow button {
+        height: 75px;
+        font-size: larger;
+    }
+    .enteraccountbelow p {
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+}
